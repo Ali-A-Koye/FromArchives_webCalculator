@@ -1,0 +1,165 @@
+body{
+    background-image: url("https://media.giphy.com/media/Sw6IbrKiEklZDVgQaq/giphy.gif");
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*---------GRID HERE-------- */
+#container{
+    display:grid;
+    background-color: white;
+    width: 60%;
+    height: 765px;
+      overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+border:3px solid black;
+grid-template-columns: repeat(3,1fr);
+grid-auto-rows: 49.6px;
+grid-template-areas: 
+    "header header header"
+    "input input input"
+    "input input input"
+    "input input input"
+    "types types types"
+    "KEYPADS KEYPADS KEYPADS"  
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS"
+    "KEYPADS KEYPADS KEYPADS";
+
+}
+.icon{
+    right:310px;
+}
+#abouticon{
+  width:20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#header{
+ 
+    grid-area: header;
+    background-color:#F8F9FA ;
+}
+.navbar{
+    width:100%;
+    height: 100%;
+padding-left: 0;
+    
+    
+}
+.navbar-toggler{
+    border:none;
+    
+}
+.navbar-collapse{
+        
+
+   background-color: white;
+    background-position: center;
+     font-family:serif;
+    font-size: 15px;
+}
+li{
+    
+    margin-left: 20px;
+}
+img{
+    width:25px;
+}
+p{
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-left: -10px;
+}
+#h3{
+     font-family: sans-serif;
+    font-weight: 600;
+    color:black;
+    font-size: 25px;
+    padding-left: 0px;
+    background-color:#F8F9FA;
+    padding-right: 500px;
+    
+    
+}
+/* ----------------------------------------------*/ 
+#input{
+    grid-area: input;
+    text-align: right;
+    
+}
+#input input{
+      direction: rtl;
+    pointer-events:none;
+   width:90%;
+    height: 90px;
+    margin-right: 10px;
+    font-weight: 800px;
+    font-size: 40px;
+    border:none;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    
+   
+
+}
+#input h5{
+    font-family: 'Sawarabi Mincho', sans-serif;
+     direction: rtl;
+ margin-bottom: 23px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    
+    
+}
+/* ----------------------------------------- */
+#KEYPADS{
+    border-top: 1px solid black;
+    grid-area: KEYPADS;
+background-color: #bdbebf;
+display:grid;
+    grid-template-columns: repeat(9,1fr);
+grid-auto-rows: 102px;
+
+}
+#types{
+    grid-area:types;
+    background-repeat: no-repeat;
+}
+.press{
+border: none;
+background-color: #e3e4e5;
+cursor: pointer;
+ font-weight: 500;
+font-family:sans-serif;  
+ margin: 0.9px;
+    
+}
+.presswhite{
+border: none;
+background-color: white;
+cursor: pointer;
+ font-weight: 800;
+font-family:sans-serif;  
+ margin: 0.9px;
+    
+    
+}
+.press:hover{
+    background-color: #babbbc;
+    border:0.3px solid #babbbc;
+}
+.presswhite:hover{
+    background-color: #babbbc;
+    border:0.3px solid #babbbc;
+}
